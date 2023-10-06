@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SavingsTracker" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/green</item>
+        <item name="android:statusBarColor">@color/green</item>
+    </style>
+
+    <style name="Theme.SavingsTracker" parent="Base.Theme.SavingsTracker" />
+
+    <style name="Theme.SavingsTracker.NoActionBar"/>
+
+</resources>
