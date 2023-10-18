@@ -21,7 +21,6 @@
         <item android:id="@+id/nav_delete"
             android:title="Delete"
             android:icon="@drawable/baseline_delete_24"/>
-    </group>
 
         <item android:id="@+id/nav_rate"
             android:title="Rate Us"
@@ -30,6 +29,6 @@
         <item android:id="@+id/nav_about"
             android:title="About Us"
             android:icon="@drawable/baseline_stay_current_portrait_24" />
-
+    </group>
 
 </menu>
