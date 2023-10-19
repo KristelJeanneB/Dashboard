@@ -2,13 +2,13 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginTop="50dp"
+    android:layout_marginTop="30dp"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="500dp"
     app:cardBackgroundColor="@color/darkkgreen"
-    app:cardElevation="10dp">
+    app:cardElevation="5dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/creategoal"
@@ -40,6 +40,7 @@
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.644"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.501">
@@ -146,12 +147,12 @@
             android:id="@+id/iv_edit_goal"
             android:layout_width="163dp"
             android:layout_height="106dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="8dp"
             android:contentDescription="TODO"
             android:src="@drawable/baseline_insert_photo_24"
             app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
             app:layout_constraintEnd_toEndOf="@+id/linearLayoutCompat"
-            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintHorizontal_bias="0.481"
             app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
