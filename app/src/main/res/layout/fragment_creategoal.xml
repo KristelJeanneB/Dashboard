@@ -1,98 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".nav_fragment.CreategoalFragment"
-    android:id="@+id/goal">
+    android:layout_height="500dp"
+    app:cardBackgroundColor="@color/darkkgreen"
+    app:cardElevation="5dp">
 
-    <androidx.appcompat.widget.Toolbar
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/creategoal"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:id="@+id/toolbar"
-        android:background="@color/green"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="Create New Goal"
-        app:titleTextColor="@color/black"
-        tools:ignore="MissingConstraints"
-        />
+        android:layout_height="550dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="8dp"
+        android:padding="8dp">
 
-    <EditText
-        android:id="@+id/goal_name"
-        android:layout_width="366dp"
-        android:layout_height="62dp"
-        android:background="@color/green"
-        android:text="Goal Name"
-        android:padding="8dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="230dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/iv_edit_goal"
+            app:layout_constraintEnd_toEndOf="@+id/iv_edit_goal"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="@+id/iv_edit_goal"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/goal_amount"
-        android:layout_width="366dp"
-        android:layout_height="62dp"
-        android:layout_margin="4dp"
-        android:background="@color/green"
-        android:text="Goal Amount"
-        android:padding="8dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="313dp" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.644"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.501">
 
-    <EditText
-        android:id="@+id/goal_currency"
-        android:layout_width="366dp"
-        android:layout_height="62dp"
-        android:background="@color/green"
-        android:text="Currency"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="397dp" />
+            <EditText
+                android:id="@+id/et_editGoal"
+                android:layout_width="300dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/green"
+                android:hint="GOAL NAME:"
+                android:importantForAutofill="yes"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteY="238dp" />
 
-    <EditText
-        android:id="@+id/goal_date"
-        android:layout_width="366dp"
-        android:layout_height="62dp"
-        android:background="@color/green"
-        android:text="Date"
-        android:padding="8dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="485dp" />
+            <EditText
+                android:id="@+id/et_setAmount"
+                android:layout_width="300dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/green"
+                android:hint="AMOUNT:"
+                android:importantForAutofill="yes"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteY="325dp" />
 
-    <Button
-        android:id="@+id/bt_done"
-        android:layout_width="134dp"
-        android:layout_height="67dp"
-        android:text="DONE"
-        android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="588dp" />
+            <Button
+                android:id="@+id/bt_setCurrency"
+                style="?android:spinnerStyle"
+                android:layout_width="300dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/green"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:hint="CURRENCY:"
+                android:paddingLeft="8dp"
+                android:paddingTop="18dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteY="411dp" />
 
-    <Button
-        android:id="@+id/bt_Cancel"
-        android:layout_width="135dp"
-        android:layout_height="68dp"
-        android:text="CANCEL"
-        android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="587dp" />
+            <Button
+                android:id="@+id/bt_setDate"
+                style="?android:spinnerStyle"
+                android:layout_width="300dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/green"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:hint="YYYY-MM-DD:"
+                android:paddingLeft="8dp"
+                android:paddingTop="18dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteY="411dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="151dp"
-        android:layout_height="120dp"
-        android:src="@drawable/baseline_insert_photo_24"
-        app:layout_constraintBottom_toTopOf="@+id/goal_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.881" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayoutCompat"
+            app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat">
+
+            <Button
+                android:id="@+id/bt_Cancel"
+                android:layout_width="135dp"
+                android:layout_height="68dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/green"
+                android:hint="Cancel"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="609dp" />
+
+            <Button
+                android:id="@+id/bt_done"
+                android:layout_width="135dp"
+                android:layout_height="68dp"
+                android:background="@color/green"
+                android:hint="Done"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="219dp"
+                tools:layout_editor_absoluteY="609dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <ImageView
+            android:id="@+id/iv_edit_goal"
+            android:layout_width="163dp"
+            android:layout_height="106dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/baseline_insert_photo_24"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayoutCompat"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

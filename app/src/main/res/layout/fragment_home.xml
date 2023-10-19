@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".nav_fragment.HomeFragment">
+    tools:context=".nav_fragment.ModeActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -44,15 +44,6 @@
             app:labelVisibilityMode="labeled"
             app:menu="@menu/fab_bottom_menu"/>
     </com.google.android.material.bottomappbar.BottomAppBar>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addFabBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/baseline_add_circle_24"
-        android:tint="@color/white"
-        android:backgroundTint="@android:color/darker_gray"
-        app:layout_anchor="@id/bottomAppBar"/>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

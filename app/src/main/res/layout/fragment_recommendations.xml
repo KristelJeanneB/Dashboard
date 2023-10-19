@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bottom_fragment.AnalyticsFragment">
+    tools:context=".bottom_fragment.RecommendationsFragment">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Analytics"
+        android:text="Recommendations"
         android:textSize="32sp"
         android:textColor="@android:color/holo_green_dark"
         android:textStyle="bold"
