@@ -1,22 +1,14 @@
 package com.example.savingstracker.nav_fragment
 
-import android.content.Context
-import android.content.SharedPreferences
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.widget.SwitchCompat
 import com.example.savingstracker.R
 import com.example.savingstracker.bottom_fragment.AccountFragment
-import com.example.savingstracker.bottom_fragment.RecommendationsFragment
 import com.example.savingstracker.bottom_fragment.CategoryFragment
 import com.example.savingstracker.bottom_fragment.CreategoalFragment
-import com.example.savingstracker.bottom_fragment.WalletFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
     class HomeFragment : Fragment() {
@@ -38,21 +30,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
                         true
                     }
 
-                    R.id.bottom_wallet -> {
-                        replaceFragment(WalletFragment())
-                        activity?.title = "Wallet"
-                        true
-                    }
-
                     R.id.bottom_add -> {
                         replaceFragment(CreategoalFragment())
                         activity?.title = "Create Goal"
-                        true
-                    }
-
-                    R.id.bottom_chart -> {
-                        replaceFragment(RecommendationsFragment())
-                        activity?.title = "Recommendations"
                         true
                     }
 

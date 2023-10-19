@@ -13,5 +13,4 @@
         android:textColor="@android:color/holo_green_dark"
         android:textStyle="bold"
         android:gravity="center"/>
-
 </FrameLayout>

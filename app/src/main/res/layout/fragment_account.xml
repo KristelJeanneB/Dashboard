@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Profile"
+        android:text="Account"
         android:textSize="32sp"
         android:textColor="@android:color/holo_green_dark"
         android:textStyle="bold"
