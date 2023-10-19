@@ -1,16 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".bottom_fragment.AccountFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Account"
-        android:textSize="32sp"
-        android:textColor="@android:color/holo_green_dark"
-        android:textStyle="bold"
-        android:gravity="center"/>
-</FrameLayout>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="128dp"
+        android:layout_height="109dp"
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <Button
+        android:id="@+id/bt_logout"
+        android:layout_width="294dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:text="Log Out"
+        app:layout_constraintEnd_toEndOf="@+id/tv_contactNo"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/tv_contactNo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contactNo" />
+
+    <Button
+        android:id="@+id/bt_deleteAcc"
+        android:layout_width="294dp"
+        android:layout_height="48dp"
+        android:text="Delete Account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bt_logout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bt_logout"
+        app:layout_constraintTop_toBottomOf="@+id/bt_logout"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <EditText
+        android:id="@+id/tv_firstN"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/green"
+        android:hint="First Name:"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/profile"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/tv_lastN"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/green"
+        android:hint="Last Name:"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_firstN"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_firstN"
+        app:layout_constraintTop_toBottomOf="@+id/tv_firstN"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/tv_emailAdd"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/green"
+        android:hint="Email Address:"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_lastN"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_lastN"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lastN"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/tv_contactNo"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/green"
+        android:hint="Contact Number:"
+        android:inputType="number"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_emailAdd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_emailAdd"
+        app:layout_constraintTop_toBottomOf="@+id/tv_emailAdd"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
