@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment
 import com.example.savingstracker.bottom_fragment.RecommendationsFragment
 import com.example.savingstracker.nav_fragment.AboutFragment
 import com.example.savingstracker.nav_fragment.HomeFragment
-import com.example.savingstracker.nav_fragment.SettingsFragment
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
@@ -79,19 +78,11 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
             R.id.bottom_chart -> {
                 replaceFragment(RecommendationsFragment())
                 title = "Recommendations"
-                true
             }
 
             R.id.nav_about -> {
                 replaceFragment(AboutFragment())
                 title = "About the App"
-                true
-            }
-
-            R.id.bottom_settings -> {
-                replaceFragment(SettingsFragment())
-                title = "Settings"
-                true
             }
         }
 

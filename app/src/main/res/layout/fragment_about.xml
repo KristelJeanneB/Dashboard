@@ -1,16 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".nav_fragment.AboutFragment">
 
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="93dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="About"
-        android:textSize="32sp"
-        android:textColor="@android:color/holo_green_dark"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:text="Savings Tracker App"
+        android:textColor="@color/darkkgreen"
+        android:textSize="25sp"
         android:textStyle="bold"
-        android:gravity="center"/>
-</FrameLayout>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="10dp"
+        android:paddingTop="30dp"
+        android:text="How Does it Work?"
+        android:textAlignment="center"
+        android:textColor="@color/darkkgreen"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="56dp"
+        android:padding="10dp"
+        android:text="Savings Tracker is a process of monitoring your progress in saving money over time.Keep track of your everyday costs and you'll see how much you're spending and what expenses are unneeded. You may save money by reducing your spending. As a result, you wind up saving more."
+        android:textAlignment="center"
+        android:textColor="@color/darkkgreen"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:padding="10dp"
+        android:paddingTop="30dp"
+        android:text="Setting Financial Goals"
+        android:textColor="@color/darkkgreen"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:padding="10dp"
+        android:text="Savings Tracker can assist you in establishing financial objectives. To learn more about your money management priorities.Set aside some money each month toward your objective. Begin by saving little sums of money and progressively increasing it over time."
+        android:textAlignment="center"
+        android:textColor="@color/darkkgreen"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:padding="10dp"
+        android:paddingTop="30dp"
+        android:text="Get rid of Debts"
+        android:textColor="@color/darkkgreen"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="176dp"
+        android:padding="10dp"
+        android:text="Find more effective strategies to pay off your debts if they are holding you down. Don't allow your income be taken away by debt. Therefore, it is best to achieve financial freedom and debt elimination as soon as possible."
+        android:textAlignment="center"
+        android:textColor="@color/darkkgreen"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp" />
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="388dp"
+        android:layout_height="112dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="268dp"
+        android:padding="10dp"
+        android:text="We would want to emphasize the significance of keeping track of the time in whatever you do. With effective time management, you can do more and waste less time. As a result, you work harder and are thus more productive."
+        android:textAlignment="center"
+        android:textColor="@color/darkkgreen"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/text6"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Rate Us"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
